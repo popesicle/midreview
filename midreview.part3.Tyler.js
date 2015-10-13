@@ -23,7 +23,7 @@ var expect = chai.expect;
 
 // test for #9
 
-var pipeline = function(initialVal,...callbacks){
+var pipeline = function(initialVal,callbacks){
     var value = initialVal
     callbacks.forEach(function(callback){
         value = callback(value)
